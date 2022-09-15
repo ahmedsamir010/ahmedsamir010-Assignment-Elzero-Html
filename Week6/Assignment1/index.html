@@ -8,22 +8,49 @@
   </head>
 
   <body>
-  
-    <form action="test.py" mathod="post">
-        <label>Username</label><br/>
-        <input type="text" placeholder="Write your name" required/><br/><hr/>
-        <label>Password</label><br/>
-        <input type="password" placeholder="Your password most be strong"/><br/><hr/>
-        <label>Mobile</label><br/>
-        <input type="namper" placeholder="+123(234)20100"/><br/><hr/>
-        <label>Email</label><br>
-          <input type="email" required placeholder="Write your email"/><br/></hr>
-        <label>Subject</label><br/>
-        <input type="text" placeholder="Write your skills"/><br/><hr/>
-          <input type="hidden" value="3"/>
-          <input type="reset" value="Empty form"/><hr/>
-          <input type="submit" value="Send Data"/><hr/>
-        </form>
-
+    <form action="test.py" method="post">
+      <div>
+        <label>UserName</label><br />
+        <input
+          type="text"
+          name="username"
+          required
+          placeholder="Enter Your Name"
+        />
+      </div>
+      <hr />
+      <div>
+        <label>Password</label><br />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter Your Password"
+        />
+      </div>
+      <hr />
+      <div>
+        <label>Mobile</label><br />
+        <input type="text" name="mobile" placeholder="+20100 (234) 123" />
+      </div>
+      <hr />
+      <div>
+        <label>Email</label><br />
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Enter Your Email"
+        />
+      </div>
+      <hr />
+      <div>
+        <label>Subject</label><br />
+        <input type="text" name="subject" placeholder="Enter The Text " />
+      </div>
+      <hr />
+      <input type="hidden" name="important" value="1234567891023" />
+      <input type="submit" value="Send Data" />
+      <input type="reset" value="Empty Form" />
+    </form>
   </body>
 </html>
